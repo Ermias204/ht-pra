@@ -1,0 +1,54 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    color: green;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+#main-header {
+    text-align: center;
+    font-size: 2em;
+}
+
+.container p {
+    color: blue;
+}
+
+.menu>li {
+    list-style-type: none;
+}
+
+h2+p {
+    font-style: italic;
+}
+
+h2~p {
+    color: gray;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+    border: 5px solid rgb(229, 133, 16);
+}
+
+/* Pseudo-class Selector */
+a:hover {
+    color: rgb(190, 218, 29);
+}
+
+/* Pseudo-element Selector */
+p::first-letter {
+    font-size: 2em;
+}
+
+/* Group Selector */
+h1,
+h2,
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Selectors Practice</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <table><tr> <!-- Table row -->
-        <th>Header 1</th> <!-- Table header -->
-        <th>Header 2</th></tr><tr><td>Data 1</td> <!-- Table data -->
-        <td>Data 2</td></tr></table>
 
-        <form action="/submit" method="post"><label for="name">Name:</label><input type="text" id="name" name="name"><input type="submit" value="Submit"></form>
+    <h1>CSS Selectors Practice</h1>
 
-        <!DOCTYPE html><html lang="en"><head><title>My First Page</title></head><body><h1>Welcome!</h1><p>This is a paragraph with a <a href="https://google.com">link</a>.</p><img src="photo.jpg" alt="A scenic view"></body></html>
+    <div class="container">
+        <h2 id="main-header">Main Header</h2>
+        <p>This is a paragraph inside a container. It will be blue due to the descendant selector.</p>
+        <p>This paragraph is styled by the type selector, so it should be green.</p>
+        <div class="menu">
+            <ul>
+                <li>Menu Item 1</li>
+                <li>Menu Item 2</li>
+                <li>Menu Item 3</li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <p class="highlight">This paragraph has a class of "highlight". It will have a yellow background.</p>
+        <a href="#">Hover over me!</a>
+    </div>
+
+    <p>This is another paragraph.</p>
+    <p>Another paragraph, adjacent to the previous one.</p>
+
+    <input type="text" placeholder="Type something here...">
+
+    <h3>This is a heading 3</h3>
+
 </body>
+
 </html>
